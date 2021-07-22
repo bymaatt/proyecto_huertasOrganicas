@@ -16,12 +16,12 @@ p {
   color: darkblue;
 }
 
-/* HEADER BOOTSTRAP */
+/* header BOOTSTRAP */
 .logo2 {
   display: none;
 }
 
-/* HEADER */
+/* header */
 #header {
   background: url(../img/image-header.jpeg);
   display: flex;
@@ -132,8 +132,7 @@ ul.menu {
 .logo a {
   text-decoration: none;
   color: white;
-  font-size: 120px/2;
-  /* OPERACIONES */
+  font-size: 60px;
 }
 
 .submenu {
@@ -161,13 +160,12 @@ ul.menu {
   animation-duration: 2s;
 }
 
-/* FOOTER */
+/* footer */
 #footer {
   background-image: radial-gradient(circle at -14.09% 79.88%, #fff0ad 0, #ffeda1 8.33%, #ffea96 16.67%, #f8e78a 25%, #e4e37f 33.33%, #cdde75 41.67%, #b4d86c 50%, #98d266 58.33%, #7acd63 66.67%, #57c865 75%, #1fc46a 83.33%, #00c072 91.67%, #00bc7c 100%);
   text-transform: uppercase;
   font-family: 'Segoe UI';
-  width: 100%;
-  /* OPERACIONES */
+  width: 100vw;
   margin: auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -231,11 +229,11 @@ ul.menu {
   grid-area: logo;
   padding: 2em;
   animation: bounce;
-  width: 100px;
-  height: 100px;
+  width: 10vw;
+  height: 20vh;
 }
 
-/* Galeria de Imagenes */
+/* GALERIA */
 .img {
   text-align: center;
   margin: 0%;
@@ -246,16 +244,13 @@ ul.menu {
 .img img {
   border: yellowgreen solid;
   width: 1200px;
-  /* OPERACIONES */
   height: 800px;
-  /* OPERACIONES */
 }
 
-/* TABLA */
+/* BENEFICIOS */
 table {
   margin: 100px 50px 50px 50px;
-  font-size: 40px/2;
-  /* OPERACIONES */
+  font-size: 20px;
 }
 
 thead {
@@ -267,38 +262,29 @@ thead {
 }
 
 thead tr th, tbody tr th {
-  padding-bottom: 30px/2;
-  /* OPERACIONES */
+  padding-bottom: 15px;
   border-bottom: black solid 1px;
   border-right: black solid 1px;
 }
 
-/* Por si lo llego a utilizarlo por separado */
-/* tbody tr th{
-    padding-bottom: 15px;
-    border-right: black solid 1px;
-    border-bottom: black solid 1px;
-} */
 tfoot tr th {
   border-right: black solid 1px;
 }
 
-/* NEWSLETTER */
+/* section: newsletter */
 #newsletter {
-  padding: 40px/2;
-  /* OPERACIONES */
+  padding: 20px;
   margin: 20px;
-  /* OPERACIONES */
 }
 
 .carga {
-  width: 170px;
-  height: 20px;
+  width: 30vh;
+  height: 2rem;
   transition: all 3s;
 }
 
 .carga:focus {
-  width: 500px;
+  width: 50vh;
 }
 
 /* Titulos varios */
@@ -316,13 +302,11 @@ tfoot tr th {
   text-align: center;
   font-family: 'Segoe UI';
   font-size: 30px;
-  /* OPERACIONES */
 }
 
 /* GENERAL */
 #general {
-  width: 200%/2;
-  /* OPERACIONES */
+  width: 100vw;
   margin: auto;
   border-style: groove;
   border-top: 0px;
@@ -330,31 +314,37 @@ tfoot tr th {
   padding: 15px;
 }
 
-/* SECTION 1 */
+/* section1 */
 .column {
   float: left;
   column-count: 2;
   column-gap: 3em;
   column-rule: 1px solid gray;
-  width: 50%;
+  width: 45vw;
   overflow: hidden;
   margin-left: 5%;
   padding-top: 10%;
 }
 
-/* IMG SECTION 1 */
+/* img section 1 */
 aside {
-  width: 45%;
+  width: 45vw;
   clear: right;
   display: inline-block;
   overflow: hidden;
 }
 
-/* SECTION 2 */
+aside img {
+  margin-top: 7em;
+  width: 30vw;
+  height: 70vh;
+}
+
+/* section: tips */
 #tips {
   clear: right;
   margin-top: 6em;
-  width: 100%;
+  width: 100vw;
 }
 
 .pastilla__conjunto {
@@ -390,7 +380,7 @@ aside {
   width: 20%;
 }
 
-/* SECTION 3 */
+/* section: vos podes hacerlo */
 #podes-hacerlo {
   display: flex;
   flex-direction: column;
@@ -416,7 +406,7 @@ aside {
 }
 
 #pequenaHistoria {
-  width: 90%;
+  width: 90vw;
   text-align: center;
   display: flex;
   margin: 1em;
@@ -507,7 +497,7 @@ aside {
 
 /* MOBILE FIRST [MEDIA QUERIE: MOBILE 360PX*/
 @media only screen and (max-width: 360px) {
-  /* HEADER */
+  /* header */
   nav {
     text-align: center;
     text-transform: uppercase;
@@ -537,7 +527,7 @@ aside {
   .logo a {
     font-size: 40px;
   }
-  /* FOOTER */
+  /* footer */
   .logo-footer {
     width: 60%;
     height: 50%;
@@ -553,10 +543,11 @@ aside {
     margin: 0%;
   }
   .carga {
+    width: 50vw;
     transition: all 2s;
   }
   .carga:focus {
-    width: 200px;
+    width: 60vw;
   }
   /* SECTION 3 */
   #section3 .title {
@@ -575,7 +566,7 @@ aside {
     margin-top: 0;
     width: 100%;
   }
-  .pastillaConjunto {
+  .pastilla__conjunto {
     display: flex;
     margin: 0;
     flex-direction: column;
@@ -583,22 +574,22 @@ aside {
     align-content: center;
     justify-content: space-around;
   }
-  .pastilla1 {
+  .pastilla__1 {
     width: 50%;
   }
-  .pastilla2 {
+  .pastilla__2 {
     width: 50%;
   }
-  .pastilla3 {
+  .pastilla__3 {
     width: 50%;
   }
-  .pastilla4 {
+  .pastilla__4 {
     width: 50%;
   }
-  .pastillaConjunto h2 {
+  .pastilla__conjunto h2 {
     display: none;
   }
-  .pastillaConjunto img {
+  .pastilla__conjunto img {
     width: 60%;
     height: 7%;
     padding: 2%;
@@ -627,6 +618,134 @@ aside {
     font-size: 100%;
     margin: 0%;
     padding: 2%;
+  }
+  /* HISTORIA */
+  #general2 {
+    width: 100%;
+    margin: auto;
+    border-style: groove;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding: 15px;
+  }
+  #pequenaHistoria {
+    margin: 0;
+  }
+  #agregado {
+    display: none;
+  }
+  #diferentesHuertas {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor__master {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em;
+  }
+  .contenedor__text-huerta {
+    margin: 3em;
+  }
+  .img-huerta {
+    display: none;
+  }
+  .img-dinamica {
+    display: none;
+  }
+  .huerta-permacultural {
+    display: none;
+  }
+  .contenedor__title3 {
+    margin: 0;
+    padding-bottom: 1em;
+  }
+  /* CONTACTO */
+  #mensaje {
+    display: none;
+  }
+}
+
+/* MOBILE FIRST [MEDIA QUERIE: TABLET 720PX*/
+@media only screen and (max-width: 720px) {
+  /* section1 */
+  .column {
+    column-gap: 2em;
+    column-rule: 1px solid gray;
+    width: 90vw;
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+  /* img section 1 */
+  aside {
+    display: none;
+  }
+  /* section: tips */
+  #tips {
+    margin-top: 0em;
+    width: 90vw;
+  }
+  .pastilla__conjunto {
+    margin: 0em;
+    margin-top: 2em;
+  }
+  .pastilla__img {
+    width: 5em;
+    height: 5em;
+    margin-bottom: 2em;
+  }
+  /* Section: vos podes hacerlo */
+  #podes-hacerlo {
+    display: flex;
+    flex-direction: column;
+  }
+  #podes-hacerlo .title {
+    justify-items: center;
+  }
+  .video-section {
+    justify-content: center;
+    margin: 0em;
+  }
+  /* HISTORIA */
+  #agregado {
+    display: none;
+  }
+  .contenedor__agregado1 {
+    width: 40%;
+    padding: 4em;
+  }
+  .contenedor__agregado2 {
+    width: 40%;
+    padding: 4em;
+  }
+  .contenedor__master {
+    margin: 0;
+  }
+  .contenedor__text-huerta {
+    margin: 3em;
+  }
+  .img-huerta {
+    margin: 0;
+  }
+  .img-huerta img {
+    width: 90vw;
+  }
+  .img-dinamica {
+    margin: 0;
+  }
+  .img-dinamica img {
+    width: 90vw;
+  }
+  .huerta-permacultural {
+    margin: 0;
+  }
+  .huerta-permacultural img {
+    width: 90vw;
+  }
+  /* newsletter */
+  #section4 {
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */
