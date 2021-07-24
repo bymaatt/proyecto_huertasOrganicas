@@ -251,6 +251,9 @@ thead tr th, tbody tr th{
 tfoot tr th{
     border-right: black solid 1px;
 }
+.ventana-modal{
+    display: none;
+}
 
 
 /* section: newsletter */
@@ -469,6 +472,7 @@ aside{
 
 @media only screen and (max-width: 360px){
 
+
     /* header */
 
     nav{
@@ -503,7 +507,7 @@ aside{
     }
 
     /* footer */
-    
+
     .logo-footer{
         width: 60%;
         height: 50%;
@@ -518,6 +522,7 @@ aside{
     /* NEWSLETTER */
     #newsletter{
         margin: 0%;
+        padding: 0%;
     }
     .carga{
         width: 50vw;
@@ -532,12 +537,12 @@ aside{
         font-size: 100%;  
     }
     iframe{
-        width: 255px;
-        height: 255px;
+        width: 100%;
+        height: 100%;
     }
     .video-section{
-        width: 20%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
     }
     /* SECTION 2 */
 
@@ -653,6 +658,13 @@ aside{
     #mensaje{
         display: none;
     }
+    /* BENEFICIO */
+    .none-ventana-modal{
+        display: none;
+    }
+    .ventana-modal{
+        display: inline-block;
+    }
 }
 
 /* MOBILE FIRST [MEDIA QUERIE: TABLET 720PX*/
@@ -737,10 +749,9 @@ aside{
             width: 90vw;
         }
     }
-    /* newsletter */
+    /* BENEFICIO */
 
-    #section4{
-        margin-top: 2em;
-        margin-bottom: 2em;
+    .ventana-modal{
+        display: none;
     }
 }

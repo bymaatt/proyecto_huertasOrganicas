@@ -271,6 +271,10 @@ tfoot tr th {
   border-right: black solid 1px;
 }
 
+.ventana-modal {
+  display: none;
+}
+
 /* section: newsletter */
 #newsletter {
   padding: 20px;
@@ -541,6 +545,7 @@ aside img {
   /* NEWSLETTER */
   #newsletter {
     margin: 0%;
+    padding: 0%;
   }
   .carga {
     width: 50vw;
@@ -554,12 +559,12 @@ aside img {
     font-size: 100%;
   }
   iframe {
-    width: 255px;
-    height: 255px;
+    width: 100%;
+    height: 100%;
   }
   .video-section {
-    width: 20%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
   }
   /* SECTION 2 */
   section#section2 {
@@ -664,6 +669,13 @@ aside img {
   #mensaje {
     display: none;
   }
+  /* BENEFICIO */
+  .none-ventana-modal {
+    display: none;
+  }
+  .ventana-modal {
+    display: inline-block;
+  }
 }
 
 /* MOBILE FIRST [MEDIA QUERIE: TABLET 720PX*/
@@ -742,10 +754,9 @@ aside img {
   .huerta-permacultural img {
     width: 90vw;
   }
-  /* newsletter */
-  #section4 {
-    margin-top: 2em;
-    margin-bottom: 2em;
+  /* BENEFICIO */
+  .ventana-modal {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
