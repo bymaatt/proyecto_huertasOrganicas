@@ -251,8 +251,11 @@ thead tr th, tbody tr th{
 tfoot tr th{
     border-right: black solid 1px;
 }
-.ventana-modal{
+.ventana-modal-1{
     display: none;
+}
+.ventana-modal-2{
+    visibility: hidden;
 }
 
 
@@ -658,12 +661,18 @@ aside{
     #mensaje{
         display: none;
     }
+
     /* BENEFICIO */
+
     .none-ventana-modal{
         display: none;
     }
-    .ventana-modal{
-        display: inline-block;
+    .ventana-modal-2{
+        padding: 1em;
+        visibility: visible;
+    }
+    .ventana-modal-1{
+        display: block;
     }
 }
 
@@ -751,7 +760,12 @@ aside{
     }
     /* BENEFICIO */
 
-    .ventana-modal{
-        display: none;
+    .ventana-modal-1{
+        border-right: hidden;
     }
+
+
+    /* .ventana-modal-1{
+        display: none;
+    } */
 }
