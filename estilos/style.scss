@@ -339,19 +339,22 @@ aside{
     margin-top: 6em;
     width: 100vw;
 }
-.pastilla__conjunto{
+.pastilla{
     display: flex;
     margin: 5em;
     justify-content: center;
     align-content: center;
     justify-content: space-around;
 }
-.pastilla__titulo{
+.divPastilla__heading{
     display: none;
 }
-.pastilla__img{
+.divPastilla__img{
     width: 6em;
     height: 6em;
+}
+.divPastilla__parrafo{
+    padding-top: 2em;
 }
 
 .pastilla__1{
