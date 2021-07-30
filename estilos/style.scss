@@ -210,10 +210,10 @@ ul.menu{
     margin: 0;
     padding: 0;
     grid-area: logo;
-    padding: 2em;
+    padding: .5em;
     animation: bounce;
-    width: 10vw;
-    height: 20vh;
+    width: 11em;
+    height: 12em;
 }
 /* GALERIA */
 
@@ -337,7 +337,7 @@ aside{
 #tips{
     clear: right;
     margin-top: 6em;
-    width: 100vw;
+    width: 100%;
 }
 .pastilla{
     display: flex;
@@ -383,6 +383,9 @@ aside{
 .video-section{
     justify-content: center;
     margin: 3em;
+    iframe{
+        width: 75%;
+    }
 }
 
 
@@ -406,7 +409,7 @@ aside{
 #agregado{
     display: flex;
     justify-content: center;
-    margin: 8em;
+    margin: 2em;
 }
 .contenedor__agregado1{
     width: 40%;
@@ -428,7 +431,7 @@ aside{
     margin: 4em;
 }
 .contenedor__text-huerta{
-    margin: 3em;
+    margin: 1em;
 }
 .img-huerta{
     margin: 3em;
@@ -474,6 +477,35 @@ aside{
     margin: 4em;
 }
 
+/* MOBILE FIRST [MEDIA QUERIE: TABLET 767PX*/
+
+@media only screen and (max-width: 768px){
+
+    .imgAside{
+        display: none;
+    }
+    .column{
+        width: 90%;
+        margin-bottom: 2em;
+    }
+
+    /* section: tips */
+
+    #tips{
+        margin-top: 0em;
+        width: 100%;
+    }
+    .pastilla{
+        margin: 0em;
+        margin-top: 2em;
+    }
+    .divPastilla__img{
+        width: 5em;
+        height: 5em;
+        margin-bottom: 2em;
+    }
+}
+
 /* MOBILE FIRST [MEDIA QUERIE: TABLET 720PX*/
 
 @media only screen and (max-width: 720px){
@@ -496,11 +528,11 @@ aside{
         margin-top: 0em;
         width: 90vw;
     }
-    .pastilla__conjunto{
+    .pastilla{
         margin: 0em;
         margin-top: 2em;
     }
-    .pastilla__img{
+    .divPastilla__img{
         width: 5em;
         height: 5em;
         margin-bottom: 2em;
@@ -568,9 +600,54 @@ aside{
     } */
 }
 
+
+/* MOBILE FIRST [MEDIA QUERIE: arreglo 575PX*/
+
+@media only screen and (max-width: 575px){
+    /* SECTION 2 */
+
+    #tips{
+        margin-top: 0;
+        width: 100%;
+    }
+    .pastilla{
+        display: flex;
+        margin: 1em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .pastilla__1{
+        width: 45%;
+        margin: .5em;
+    }
+    .pastilla__2{
+        width: 45%;
+        margin: .5em;
+    }
+    .pastilla__3{
+        width: 45%;
+        margin: .5em;
+    }
+    .pastilla__4{
+        width: 45%;
+        margin: .5em;
+    }
+
+    .divPastilla__heading{
+        display: none;
+    }
+    .divPastilla__img{
+        width: 5em;
+        height: 4em;
+        
+    }
+}
+
 /* MOBILE FIRST [MEDIA QUERIE: MOBILE 360PX*/
 
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 320px){
 
 
     /* header */
@@ -609,8 +686,8 @@ aside{
     /* footer */
 
     .logo-footer{
-        width: 60%;
-        height: 50%;
+        width: 5em;
+        height: 6em;
         padding: 0%;
         margin: 0%;
     }
@@ -633,7 +710,7 @@ aside{
     }
 
     /* SECTION 3 */
-    #section3 .title{
+    #podes-hacerlo .title{
         font-size: 100%;  
     }
     iframe{
@@ -646,17 +723,17 @@ aside{
     }
     /* SECTION 2 */
 
-    section#section2{
+    #tips{
         margin-top: 0;
         width: 100%;
     }
-    .pastilla__conjunto{
+    .pastilla{
         display: flex;
-        margin: 0;
+        margin: 1em;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .pastilla__1{
         width: 50%;
@@ -671,10 +748,10 @@ aside{
         width: 50%;
     }
 
-    .pastilla__conjunto h2{
+    .divPastilla__heading{
         display: none;
     }
-    .pastilla__conjunto img{
+    .divPastilla__img{
         width: 60%;
         height: 7%;
         padding: 2%;
@@ -706,9 +783,9 @@ aside{
         padding: 0%;
     }
     .title{
-        font-size: 100%;
+        font-size: 1.5em;
         margin: 0%;
-        padding: 2%;
+        padding: 2.5rem;
     }
     /* HISTORIA */
 
