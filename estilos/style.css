@@ -529,7 +529,32 @@ aside {
     width: 5em;
     height: 4em; } }
 
-/* MOBILE FIRST [MEDIA QUERIE: MOBILE 360PX*/
+/* MOBILE FIRST [MEDIA QUERIE: arreglo beneficios 430PX*/
+@media only screen and (max-width: 430px) {
+  /* BENEFICIO */
+  .none-ventana-modal {
+    display: none; }
+  .ventana-modal-2 {
+    padding: 1em;
+    visibility: visible; }
+  .ventana-modal-1 {
+    display: block; }
+  .tablasa {
+    width: 100%;
+    height: 100%; }
+  .tit-tablasa {
+    font-size: 1em; }
+  /* footer */
+  .logo-footer {
+    width: 5em;
+    height: 6em;
+    padding: 0%;
+    margin: 0%; }
+  #footer ul.lista {
+    padding: 2%;
+    font-size: 70%; } }
+
+/* MOBILE FIRST [MEDIA QUERIE: MOBILE 320PX*/
 @media only screen and (max-width: 320px) {
   /* header */
   nav {
@@ -555,15 +580,6 @@ aside {
     margin: 0; }
   .logo a {
     font-size: 40px; }
-  /* footer */
-  .logo-footer {
-    width: 5em;
-    height: 6em;
-    padding: 0%;
-    margin: 0%; }
-  #footer ul.lista {
-    padding: 2%;
-    font-size: 70%; }
   /* NEWSLETTER */
   #newsletter {
     margin: 0%;
@@ -660,12 +676,4 @@ aside {
     padding-bottom: 1em; }
   /* CONTACTO */
   #mensaje {
-    display: none; }
-  /* BENEFICIO */
-  .none-ventana-modal {
-    display: none; }
-  .ventana-modal-2 {
-    padding: 1em;
-    visibility: visible; }
-  .ventana-modal-1 {
-    display: block; } }
+    display: none; } }
