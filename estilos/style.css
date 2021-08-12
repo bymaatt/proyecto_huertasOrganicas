@@ -3,7 +3,7 @@
   font-family: 'Roboto';
   background-color: #E2EDA1; }
 
-.title {
+h2, h3 {
   color: #3E7A28;
   text-transform: uppercase;
   text-align: center;
@@ -238,6 +238,12 @@ tfoot tr th {
   width: 50vh; }
 
 /* Titulos varios */
+.title {
+  color: #3E7A28;
+  text-transform: uppercase;
+  font-family: 'Segoe UI';
+  font-size: 2rem; }
+
 .title2 {
   color: #3E7A28;
   text-transform: uppercase;
@@ -340,11 +346,21 @@ aside {
   border-bottom: 0px;
   padding: 15px; }
 
+.none {
+  display: none; }
+
 #pequenaHistoria {
   width: 90vw;
   text-align: center;
   display: flex;
+  flex-direction: column;
   margin: 1em; }
+  #pequenaHistoria h1 {
+    color: #3E7A28;
+    text-transform: uppercase;
+    font-family: 'Segoe UI';
+    font-size: 2rem;
+    padding-bottom: 1em; }
 
 #agregado {
   display: flex;
