@@ -71,7 +71,7 @@
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner rounded">
                   <div class="carousel-item active">
                     <img src="../img/huerta-marta.jpg" class="d-block w-100" alt="huerta de Marta">
                     <div class="carousel-caption d-none d-md-block">
@@ -80,14 +80,14 @@
                         su propia huerta. ¡Felicidades!</p>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item rounded">
                     <img src="../img/huerta-raquel.jpg" class="d-block w-100" alt="huerta de Raquel">
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="fs-1 text-uppercase bg-white text-dark rounded">Huerta de Raquel</h5>
                       <p class="shadow p-3 mb-5 bg-body rounded fs-4">Los primeros frutos de la huerta de Raquel. ¡Que alegría!</p>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item rounded">
                     <img src="../img/niños.jpg" class="d-block w-100" alt="Niños">
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="fs-1 text-uppercase bg-white text-dark rounded">Niños en su huerta</h5>
@@ -106,50 +106,68 @@
             </div>
         </section>
 
-        <section id="section4">
-            <h3>Si quieres recibir un newsletter cada semana completa aquí:</h3>
-            <form action="../index.html" method="GET" enctype="multipart/form-data">
-                <input type="email" placeholder="completa aquí tu email" class="carga">
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
+        <section id="newsletter">
+          <h3>Si quieres recibir un newsletter cada semana completa aquí:</h3>
+          <form method="GET" enctype="multipart/form-data" class="formul">
+              <input type="email" placeholder="completa aquí tu email" class="carga">
+              <button type="button" class="btn btn-success" value="Enviar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Enviar
+              </button>
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">¡Muchas gracias!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ¡Se ha suscrito correctamente!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </form>
+      </section>
     </main>
     <footer id="footer">
-        <div class="contenedor-lista">
-            <ul class="lista">
-                <li>Ayuda</li>
-                <li>
-                    <ul class="dec">
-                        <li><a href="">Escribinos</a></li>
-                        <li><a href="">Soporte</a></li>
-                        <li><a href="">Legal</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="lista">
-                <li>Trabaja con Nosotros</li>
-                <li>
-                    <ul class="dec">
-                        <li><a href="">Busquedas</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="lista">
-                <li>Contacto</li>
-                <li>
-                    <ul class="dec">
-                        <li><a href="">Mail</a></li>
-                        <li><a href="https://www.facebook.com/matias.maciel.7146557">Facebook</a></li>
-                        <li><a href="www.instagram.com/bymaatt/?hl=es-la">Intagram</a></li>
-                        <li><a href="https://github.com/bymaatt">Github</a></li>
-                        <li><a href="www.twitch.tv/bymaatt">Twitch</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <img class="logo-footer" src="../img/logo.png" alt="logo">
-
-    </footer>
+      <div class="contenedor-lista">
+        <ul class="lista">
+          <li>Ayuda</li>
+          <li>
+              <ul class="dec d-flex flex-column">
+                  <li><a href="contacto.html" class="col">Escribinos</a></li>
+                  <li><a href="politicas-de-privacidad.html" class="col">Politica de privacidad</a></li>
+                  <li><a href="cookies.html" class="col">Politica de Cookies</a></li>
+                  <li><a href="legal.html" class="col">Legal</a></li>
+              </ul>
+          </li>
+      </ul>
+          <ul class="lista">
+              <li>Trabaja con Nosotros</li>
+              <li>
+                  <ul class="dec">
+                      <li><a href="">Busquedas</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <ul class="lista">
+              <li>Contacto</li>
+              <li>
+                  <ul class="dec">
+                      <li><a href=""><img src="../img/email.png" alt="logo-email" class="red-1"></a></li>
+                      <li><a href="https://www.facebook.com/matias.maciel.7146557"><img src="../img/facebook.png" alt="logo-facebook" class="red-2"></a></li>
+                      <li><a href="https://www.instagram.com/bymaatt/"><img src="../img/instagram.png" alt="logo-instagram" class="red-3"></a></li>
+                      <li><a href="https://github.com/bymaatt"><img src="../img/github.png" alt="logo-github" class="red-4"></a></li>
+                      <li><a href="https://www.twitch.tv/bymaatt"><img src="../img/twitch.png" alt="logo-twitch" class="red-5"></a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+      <img class="logo-footer" src="/img/logo.png" alt="logo-footer">
+  </footer>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -10,6 +10,13 @@ h2, h3 {
   font-family: 'Segoe UI';
   font-size: 2rem; }
 
+.title-politica {
+  font-size: 1rem;
+  text-align: start; }
+
+.text-politica {
+  text-align: start; }
+
 p {
   color: darkblue; }
 
@@ -187,6 +194,27 @@ ul.menu {
   width: 11em;
   height: 12em; }
 
+/* img redes-footer */
+.red-1 {
+  width: 1.5em;
+  height: 1.5em; }
+
+.red-2 {
+  width: 1.5em;
+  height: 1.5em; }
+
+.red-3 {
+  width: 1.5em;
+  height: 1.5em; }
+
+.red-4 {
+  width: 1.5em;
+  height: 1.5em; }
+
+.red-5 {
+  width: 1.5em;
+  height: 1.5em; }
+
 /* GALERIA */
 .img {
   text-align: center;
@@ -231,7 +259,7 @@ tfoot tr th {
 
 .carga {
   width: 30vh;
-  height: 2rem;
+  height: 2.28rem;
   transition: all 3s; }
 
 .carga:focus {
@@ -287,7 +315,8 @@ aside {
   aside img {
     margin-top: 7em;
     width: 30vw;
-    height: 70vh; }
+    height: 70vh;
+    border-radius: 10px; }
 
 /* section: tips */
 #tips {
@@ -306,8 +335,8 @@ aside {
   display: none; }
 
 .divPastilla__img {
-  width: 6em;
-  height: 6em; }
+  width: 5em;
+  height: 5em; }
 
 .divPastilla__parrafo {
   padding-top: 2em; }
@@ -383,19 +412,27 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 4em; }
+  margin: 1em; }
 
 .contenedor__text-huerta {
   margin: 1em; }
 
 .img-huerta {
   margin: 3em; }
+  .img-huerta img {
+    border-radius: 10px; }
+
+.img-dinamica img {
+  border-radius: 10px; }
+
+.huerta-permacultural img {
+  border-radius: 10px; }
 
 .contenedor__title2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 4em;
+  margin: 2em;
   color: #3E7A28;
   text-transform: uppercase;
   text-align: center;
@@ -410,7 +447,7 @@ aside {
   margin: 2em; }
 
 .contenedor__amigos-suelo {
-  margin: 2em; }
+  margin: 1em; }
 
 .contenedor__text-permacultural {
   margin: 2em; }
@@ -419,7 +456,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2em;
+  margin: 1em;
   color: #3E7A28;
   text-transform: uppercase;
   text-align: center;
@@ -430,6 +467,30 @@ aside {
   flex-direction: column;
   justify-content: center;
   margin: 4em; }
+
+/* CONTACTO */
+#formulario {
+  padding-top: 3rem;
+  background-color: #e7e993;
+  border-radius: 1em; }
+  #formulario h2 {
+    padding-bottom: 2rem; }
+
+.sexo {
+  width: 25rem; }
+
+.botones input {
+  width: 15rem; }
+
+.env {
+  color: white;
+  background-color: #00bc7c;
+  /* box-shadow: 3px 3px white; */ }
+
+.borr {
+  color: white;
+  background-color: #d19c71;
+  /* box-shadow: 3px 3px white; */ }
 
 /* MOBILE FIRST [MEDIA QUERIE: TABLET 767PX*/
 @media only screen and (max-width: 768px) {
@@ -509,10 +570,7 @@ aside {
       width: 90vw; }
   /* BENEFICIO */
   .ventana-modal-1 {
-    border-right: hidden; }
-  /* .ventana-modal-1{
-        display: none;
-    } */ }
+    border-right: hidden; } }
 
 /* MOBILE FIRST [MEDIA QUERIE: arreglo 575PX*/
 @media only screen and (max-width: 575px) {
@@ -598,8 +656,8 @@ aside {
     font-size: 40px; }
   /* NEWSLETTER */
   #newsletter {
-    margin: 0%;
-    padding: 0%; }
+    margin: 0;
+    padding: 0; }
   .carga {
     width: 50vw;
     transition: all 2s; }
