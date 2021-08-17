@@ -296,7 +296,7 @@ tfoot tr th{
     margin: 20px;
 }
 .carga{
-    width: 30vh;
+    width: 45vh;
     height: 2.28rem;
     transition: all 3s;
 }
@@ -457,15 +457,15 @@ aside{
 #agregado{
     display: flex;
     justify-content: center;
-    margin: 2em;
+    margin: 1em;
 }
 .contenedor__agregado1{
     width: 40%;
-    padding: 4em;
+    padding: 2em;
 }
 .contenedor__agregado2{
     width: 40%;
-    padding: 4em;
+    padding: 2em;
 }
 
 #diferentesHuertas{
@@ -482,17 +482,19 @@ aside{
     margin: 1em;
 }
 .img-huerta{
-    margin: 3em;
+    margin: 1em;
     img{
         border-radius: 10px;
     }
 }
 .img-dinamica{
+    margin: 1em;
     img{
         border-radius: 10px;
     }
 }
 .huerta-permacultural{
+    margin: 1em;
     img{
         border-radius: 10px;
     }
@@ -513,7 +515,7 @@ aside{
     font-size: medium;
 }
 .contenedor__text-biodinamica{
-    margin: 2em;
+    margin: 1em;
 }
 .contenedor__amigos-suelo{
     margin: 1em;
@@ -525,7 +527,7 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1em;
+    margin: .5em;
     color: #3E7A28;
     text-transform: uppercase;
     text-align: center;
@@ -565,7 +567,22 @@ aside{
     /* box-shadow: 3px 3px white; */
 }
 
-/* MOBILE FIRST [MEDIA QUERIE: TABLET 767PX*/
+/* MOBILE FIRST [MEDIA QUERIE: TABLET 970PX*/
+
+@media only screen and (max-width: 1077px){
+
+    /* section: tips */
+    
+    #tips{
+        width: 100%;
+    }
+    .column{
+        width: 90%;
+        margin-bottom: 2em;
+    }
+}
+
+/* MOBILE FIRST [MEDIA QUERIE: TABLET 768PX*/
 
 @media only screen and (max-width: 768px){
 
@@ -689,6 +706,19 @@ aside{
 /* MOBILE FIRST [MEDIA QUERIE: arreglo 575PX*/
 
 @media only screen and (max-width: 575px){
+
+    /* NEWSLETTER */
+    #newsletter{
+        margin: 1rem;
+        padding: 0;
+    }
+    .carga{
+        width: 45vw;
+        transition: all 2s;
+    }
+    .carga:focus{
+        width: 65vw;
+    }
     /* SECTION 2 */
 
     #tips{
@@ -728,12 +758,6 @@ aside{
         height: 4em;
         
     }
-}
-
-/* MOBILE FIRST [MEDIA QUERIE: arreglo beneficios 430PX*/
-
-@media only screen and (max-width: 430px){
-
     /* BENEFICIO */
 
     .none-ventana-modal{
@@ -752,6 +776,24 @@ aside{
     }
     .tit-tablasa{
         font-size: 1em;
+    }
+}
+
+/* MOBILE FIRST [MEDIA QUERIE: arreglo beneficios 430PX*/
+
+@media only screen and (max-width: 430px){
+
+    /* NEWSLETTER */
+    #newsletter{
+        margin: 1rem;
+        padding: 0;
+    }
+    .carga{
+        width: 30vw;
+        transition: all 2s;
+    }
+    .carga:focus{
+        width: 55vw;
     }
 
     /* footer */
@@ -810,13 +852,16 @@ aside{
     #newsletter{
         margin: 0;
         padding: 0;
+        h3{
+            font-size: 1rem;
+        }
     }
     .carga{
-        width: 50vw;
+        width: 30vw;
         transition: all 2s;
     }
     .carga:focus{
-        width: 60vw;
+        width: 55vw;
     }
 
     /* SECTION 3 */
@@ -891,6 +936,7 @@ aside{
     }
     #general{
         padding: 0%;
+        margin: 0%;
     }
     .title{
         font-size: 1.5em;
@@ -921,7 +967,10 @@ aside{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 2em;
+        margin: .5em;
+    }
+    .contenedor__title3{
+        font-size: 1.5rem;
     }
     .contenedor__text-huerta{
         margin: 3em;
@@ -942,8 +991,18 @@ aside{
 
     /* CONTACTO */
 
-    #mensaje{
+    /* #mensaje{
         display: none;
+    } */
+    .botones{
+        font-size: 1rem;
     }
+    /* politica de privacidad */
+
+    .text-politica{
+        margin: 0%;
+        padding: 0%;
+    }
+
 }
 
